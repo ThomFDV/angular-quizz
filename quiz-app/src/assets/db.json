@@ -1,9 +1,68 @@
 {
-  "musics": [
+  "quiz": [
     {
       "id": 1,
-      "title": "Ceci est une music",
-      "artist": "toto le plus fort"
+      "title": "Gangam Style",
+      "artist": "PSY",
+      "option1": "Matt Pokora",
+      "option2": "Garou",
+      "option3": "Fatal Bazooka"
+    },
+    {
+      "id": 2,
+      "title": "Gangam Style",
+      "artist": "PSY",
+      "option1": "Matt Pokora",
+      "option2": "Garou",
+      "option3": "Fatal Bazooka"
+    },
+    {
+      "id": 3,
+      "title": "Gangam Style",
+      "artist": "PSY",
+      "option1": "Matt Pokora",
+      "option2": "Garou",
+      "option3": "Fatal Bazooka"
+    },
+    {
+      "id": 4,
+      "title": "Gangam Style",
+      "artist": "PSY",
+      "option1": "Matt Pokora",
+      "option2": "Garou",
+      "option3": "Fatal Bazooka"
+    },
+    {
+      "id": 5,
+      "title": "Gangam Style",
+      "artist": "PSY",
+      "option1": "Matt Pokora",
+      "option2": "Garou",
+      "option3": "Fatal Bazooka"
+    },
+    {
+      "id": 6,
+      "title": "Gangam Style",
+      "artist": "PSY",
+      "option1": "Matt Pokora",
+      "option2": "Garou",
+      "option3": "Fatal Bazooka"
+    },
+    {
+      "id": 7,
+      "title": "Gangam Style",
+      "artist": "PSY",
+      "option1": "Matt Pokora",
+      "option2": "Garou",
+      "option3": "Fatal Bazooka"
+    },
+    {
+      "id": 8,
+      "title": "Gangam Style",
+      "artist": "PSY",
+      "option1": "Matt Pokora",
+      "option2": "Garou",
+      "option3": "Fatal Bazooka"
     }
   ]
 }

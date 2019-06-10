@@ -5,18 +5,38 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HeaderComponent } from './components/header/header.component';
-import {MatToolbarModule} from "@angular/material";
+import {
+    MatButtonModule,
+    MatCardModule,
+    MatRadioModule,
+    MatSelectModule,
+    MatStepperModule,
+    MatToolbarModule
+} from "@angular/material";
+import { HomeComponent } from './components/home/home.component';
+import { GameComponent } from './components/game/game.component';
+import {ReactiveFormsModule} from "@angular/forms";
+import {HttpClientModule} from "@angular/common/http";
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent
+    HeaderComponent,
+    HomeComponent,
+    GameComponent
   ],
     imports: [
         BrowserModule,
         AppRoutingModule,
         BrowserAnimationsModule,
-        MatToolbarModule
+        MatToolbarModule,
+        MatCardModule,
+        MatButtonModule,
+        MatStepperModule,
+        MatSelectModule,
+        ReactiveFormsModule,
+        HttpClientModule,
+        MatRadioModule
     ],
   providers: [],
   bootstrap: [AppComponent]
