@@ -7,16 +7,16 @@
             <mat-card-title>Quel artist est l'auteur de {{quiz[0].title}}-{{quiz[0].id}} ?</mat-card-title>
             <mat-card-content>
               <mat-radio-group class="d-flex flex-column" formControlName="answer0">
-                <mat-radio-button value="{{quiz[0].option0}}" class="order-2">
+                <mat-radio-button value="{{quiz[0].option0}}" class="order-4">
                   {{quiz[0].option0}}
                 </mat-radio-button>
                 <mat-radio-button value="{{quiz[0].option1}}" class="order-1">
                   {{quiz[0].option1}}
                 </mat-radio-button>
-                <mat-radio-button value="{{quiz[0].option2}}" class="order-3">
+                <mat-radio-button value="{{quiz[0].option2}}" class="order-2">
                   {{quiz[0].option2}}
                 </mat-radio-button>
-                <mat-radio-button value="{{quiz[0].option3}}" class="order-4">
+                <mat-radio-button value="{{quiz[0].option3}}" class="order-3">
                   {{quiz[0].option3}}
                 </mat-radio-button>
               </mat-radio-group>
@@ -33,16 +33,16 @@
             <mat-card-title>Quel artist est l'auteur de {{quiz[1].title}}-{{quiz[1].id}} ?</mat-card-title>
             <mat-card-content>
               <mat-radio-group class="d-flex flex-column" formControlName="answer1">
-                <mat-radio-button value="{{quiz[1].option0}}" class="">
+                <mat-radio-button value="{{quiz[1].option0}}" class="order-2">
                   {{quiz[1].option0}}
                 </mat-radio-button>
-                <mat-radio-button value="{{quiz[1].option1}}" class="">
+                <mat-radio-button value="{{quiz[1].option1}}" class="order-4">
                   {{quiz[1].option1}}
                 </mat-radio-button>
-                <mat-radio-button value="{{quiz[1].option2}}" class="">
+                <mat-radio-button value="{{quiz[1].option2}}" class="order-1">
                   {{quiz[1].option2}}
                 </mat-radio-button>
-                <mat-radio-button value="{{quiz[1].option3}}" class="">
+                <mat-radio-button value="{{quiz[1].option3}}" class="order-3">
                   {{quiz[1].option3}}
                 </mat-radio-button>
               </mat-radio-group>
@@ -59,16 +59,16 @@
             <mat-card-title>Quel artist est l'auteur de {{quiz[2].title}}-{{quiz[2].id}} ?</mat-card-title>
             <mat-card-content>
               <mat-radio-group class="d-flex flex-column" formControlName="answer2">
-                <mat-radio-button value="{{quiz[2].option0}}" class="">
+                <mat-radio-button value="{{quiz[2].option0}}" class="order-4">
                   {{quiz[2].option0}}
                 </mat-radio-button>
-                <mat-radio-button value="{{quiz[2].option1}}" class="">
+                <mat-radio-button value="{{quiz[2].option1}}" class="order-1">
                   {{quiz[2].option1}}
                 </mat-radio-button>
-                <mat-radio-button value="{{quiz[2].option2}}" class="">
+                <mat-radio-button value="{{quiz[2].option2}}" class="order-2">
                   {{quiz[2].option2}}
                 </mat-radio-button>
-                <mat-radio-button value="{{quiz[2].option3}}" class="">
+                <mat-radio-button value="{{quiz[2].option3}}" class="order-3">
                   {{quiz[2].option3}}
                 </mat-radio-button>
               </mat-radio-group>
@@ -84,17 +84,17 @@
           <mat-card>
             <mat-card-title>Quel artist est l'auteur de {{quiz[3].title}}-{{quiz[3].id}} ?</mat-card-title>
             <mat-card-content>
-              <mat-radio-group class="d-flex flex-column" formControlName="answer{{3}}">
-                <mat-radio-button value="{{quiz[3].option0}}" class="">
+              <mat-radio-group class="d-flex flex-column" formControlName="answer3">
+                <mat-radio-button value="{{quiz[3].option0}}" class="order-4">
                   {{quiz[3].option0}}
                 </mat-radio-button>
-                <mat-radio-button value="{{quiz[3].option1}}" class="">
+                <mat-radio-button value="{{quiz[3].option1}}" class="order-1">
                   {{quiz[3].option1}}
                 </mat-radio-button>
-                <mat-radio-button value="{{quiz[3].option2}}" class="">
+                <mat-radio-button value="{{quiz[3].option2}}" class="order-2">
                   {{quiz[3].option2}}
                 </mat-radio-button>
-                <mat-radio-button value="{{quiz[3].option3}}" class="">
+                <mat-radio-button value="{{quiz[3].option3}}" class="order-3">
                   {{quiz[3].option3}}
                 </mat-radio-button>
               </mat-radio-group>
@@ -104,6 +104,5 @@
         </div>
       </form>
     </mat-step>
-    <button mat-raised-button color="warn" type="submit">Terminer !</button>
   </mat-horizontal-stepper>
 </section>

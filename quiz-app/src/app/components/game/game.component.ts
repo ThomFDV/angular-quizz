@@ -12,6 +12,8 @@ export class GameComponent implements OnInit {
 
   private quiz: GameModel[] = [];
   private quizId = [];
+  private order = [];
+  private answerNbr = 4;
   private quizNbr = 4;
   answers0: FormGroup;
   answers1: FormGroup;
@@ -23,6 +25,7 @@ export class GameComponent implements OnInit {
 
   ngOnInit() {
     this.shuffle();
+    this.shuffleAnswers();
     for (let i = 0; i < this.quizNbr; i++) {
       this.getQuiz(i);
     }
@@ -55,6 +58,17 @@ export class GameComponent implements OnInit {
       }
     }
     this.quizId = arr;
+  }
+
+  shuffleAnswers() {
+    let arr = [];
+    while (arr.length < this.answerNbr) {
+      let r = Math.floor(Math.random() * this.quizNbr) + 1;
+      if (arr.indexOf(r) === -1) {
+        arr.push(r);
+      }
+    }
+    this.order = arr;
   }
 
   isCorrect0() {
