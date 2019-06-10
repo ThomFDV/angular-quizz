@@ -10,31 +10,34 @@ import {GameModel} from "../../models/game.model";
 })
 export class GameComponent implements OnInit {
 
-  private quiz1: GameModel;
-  private quiz2: GameModel;
-  private quiz3: GameModel;
-  private quiz4: GameModel;
+  private quiz: GameModel[] = [];
   private quizId = [];
+  private quizNbr = 4;
 
   constructor(private formBuilder: FormBuilder,
               private gameService: GameService) {}
 
   ngOnInit() {
-
-    this.getQuiz1();
-    this.getQuiz2();
+    this.shuffle();
+    for (let i = 0; i < this.quizNbr; i++) {
+      this.getQuiz(i);
+    }
   }
 
-  getQuiz1() {
-    this.quizId[0] = Math.floor((Math.random() * 4) + 1);
-    this.gameService.getQuiz(this.quizId[0]).subscribe((res: GameModel) => {
-      this.quiz1 = res;
+  getQuiz(i) {
+    this.gameService.getQuiz(this.quizId[i]).subscribe((res: GameModel) => {
+      this.quiz.push(res);
     });
   }
-  getQuiz2() {
-    this.quizId[1] = Math.floor((Math.random() * 4) + 1);
-    this.gameService.getQuiz(this.quizId[1]).subscribe((res: GameModel) => {
-      this.quiz2 = res;
-    });
+
+  shuffle() {
+    let arr = []
+    while (arr.length < this.quizNbr) {
+      let r = Math.floor(Math.random() * this.quizNbr) + 1;
+      if (arr.indexOf(r) === -1) {
+        arr.push(r);
+      }
+    }
+    this.quizId = arr;
   }
 }
