@@ -11,66 +11,30 @@
     },
     {
       "id": 2,
-      "title": "Gangam Style",
-      "artist": "PSY",
-      "option0": "PSY",
+      "title": "Despacito",
+      "artist": "Luis Fonsi",
+      "option0": "Luis Fonsi",
       "option1": "Matt Pokora",
       "option2": "Garou",
       "option3": "Fatal Bazooka"
     },
     {
       "id": 3,
-      "title": "Gangam Style",
-      "artist": "PSY",
-      "option0": "PSY",
+      "title": "God's Plan",
+      "artist": "Drake",
+      "option0": "Drake",
       "option1": "Matt Pokora",
-      "option2": "Garou",
+      "option2": "Franky Vincent",
       "option3": "Fatal Bazooka"
     },
     {
       "id": 4,
-      "title": "Gangam Style",
-      "artist": "PSY",
-      "option0": "PSY",
-      "option1": "Matt Pokora",
-      "option2": "Garou",
-      "option3": "Fatal Bazooka"
-    },
-    {
-      "id": 5,
-      "title": "Gangam Style",
-      "artist": "PSY",
-      "option0": "PSY",
-      "option1": "Matt Pokora",
-      "option2": "Garou",
-      "option3": "Fatal Bazooka"
-    },
-    {
-      "id": 6,
-      "title": "Gangam Style",
-      "artist": "PSY",
-      "option0": "PSY",
-      "option1": "Matt Pokora",
-      "option2": "Garou",
-      "option3": "Fatal Bazooka"
-    },
-    {
-      "id": 7,
-      "title": "Gangam Style",
-      "artist": "PSY",
-      "option0": "PSY",
-      "option1": "Matt Pokora",
-      "option2": "Garou",
-      "option3": "Fatal Bazooka"
-    },
-    {
-      "id": 8,
-      "title": "Gangam Style",
-      "artist": "PSY",
-      "option0": "PSY",
-      "option1": "Matt Pokora",
-      "option2": "Garou",
-      "option3": "Fatal Bazooka"
+      "title": "Umbrella",
+      "artist": "Rihanna",
+      "option0": "Rihanna",
+      "option1": "Jennifer",
+      "option2": "Beyonce",
+      "option3": "Katie Pery"
     }
   ]
 }

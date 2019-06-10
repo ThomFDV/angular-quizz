@@ -19,6 +19,7 @@ export class GameComponent implements OnInit {
   answers1: FormGroup;
   answers2: FormGroup;
   answers3: FormGroup;
+  public goodAnswer = 0;
 
   constructor(private formBuilder: FormBuilder,
               private gameService: GameService) {}
@@ -73,33 +74,27 @@ export class GameComponent implements OnInit {
 
   isCorrect0() {
     if (this.answers0.controls.answer0.value === this.quiz[0].artist) {
-      alert('Bonne réponse !' + this.answers0.controls.answer0.value);
-    } else {
-      alert('Mauvaise réponse !' + this.answers0.controls.answer0.value);
+      this.goodAnswer += 1;
     }
   }
 
   isCorrect1() {
     if (this.answers1.controls.answer1.value === this.quiz[1].artist) {
-      alert('Bonne réponse !');
-    } else {
-      alert('Mauvaise réponse !');
+      this.goodAnswer += 1;
     }
   }
 
   isCorrect2() {
     if (this.answers2.controls.answer2.value === this.quiz[2].artist) {
-      alert('Bonne réponse !');
-    } else {
-      alert('Mauvaise réponse !');
+      this.goodAnswer += 1;
     }
   }
 
   isCorrect3() {
     if (this.answers3.controls.answer3.value === this.quiz[3].artist) {
-      alert('Bonne réponse !');
-    } else {
-      alert('Mauvaise réponse !');
+      this.goodAnswer += 1;
     }
+    this.gameService.setScore(this.goodAnswer);
+    console.log(this.goodAnswer);
   }
 }

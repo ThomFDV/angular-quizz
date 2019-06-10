@@ -17,13 +17,15 @@ import { HomeComponent } from './components/home/home.component';
 import { GameComponent } from './components/game/game.component';
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {HttpClientModule} from "@angular/common/http";
+import { ScoreComponent } from './components/score/score.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     HomeComponent,
-    GameComponent
+    GameComponent,
+    ScoreComponent
   ],
     imports: [
         BrowserModule,

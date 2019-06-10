@@ -6,6 +6,7 @@ import {HttpClient} from "@angular/common/http";
 })
 export class GameService {
   url = 'http://localhost:3000/quiz';
+  score: number;
 
   constructor(private http: HttpClient) { }
 
@@ -14,5 +15,12 @@ export class GameService {
   }
   getQuiz(quizId) {
     return this.http.get(`${this.url}/${quizId}`);
+  }
+
+  setScore(score) {
+    this.score = score;
+  }
+  getScore() {
+    return this.score;
   }
 }
