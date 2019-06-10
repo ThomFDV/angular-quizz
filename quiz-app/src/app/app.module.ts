@@ -15,7 +15,7 @@ import {
 } from "@angular/material";
 import { HomeComponent } from './components/home/home.component';
 import { GameComponent } from './components/game/game.component';
-import {ReactiveFormsModule} from "@angular/forms";
+import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {HttpClientModule} from "@angular/common/http";
 
 @NgModule({
@@ -36,7 +36,8 @@ import {HttpClientModule} from "@angular/common/http";
         MatSelectModule,
         ReactiveFormsModule,
         HttpClientModule,
-        MatRadioModule
+        MatRadioModule,
+        FormsModule
     ],
   providers: [],
   bootstrap: [AppComponent]

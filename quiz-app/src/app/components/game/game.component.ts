@@ -13,6 +13,10 @@ export class GameComponent implements OnInit {
   private quiz: GameModel[] = [];
   private quizId = [];
   private quizNbr = 4;
+  answers0: FormGroup;
+  answers1: FormGroup;
+  answers2: FormGroup;
+  answers3: FormGroup;
 
   constructor(private formBuilder: FormBuilder,
               private gameService: GameService) {}
@@ -22,6 +26,18 @@ export class GameComponent implements OnInit {
     for (let i = 0; i < this.quizNbr; i++) {
       this.getQuiz(i);
     }
+    this.answers0 = this.formBuilder.group({
+      answer0: ['', Validators.required]
+    });
+    this.answers1 = this.formBuilder.group({
+      answer1: ['', Validators.required]
+    });
+    this.answers2 = this.formBuilder.group({
+      answer2: ['', Validators.required]
+    });
+    this.answers3 = this.formBuilder.group({
+      answer3: ['', Validators.required]
+    });
   }
 
   getQuiz(i) {
@@ -31,7 +47,7 @@ export class GameComponent implements OnInit {
   }
 
   shuffle() {
-    let arr = []
+    let arr = [];
     while (arr.length < this.quizNbr) {
       let r = Math.floor(Math.random() * this.quizNbr) + 1;
       if (arr.indexOf(r) === -1) {
@@ -39,5 +55,37 @@ export class GameComponent implements OnInit {
       }
     }
     this.quizId = arr;
+  }
+
+  isCorrect0() {
+    if (this.answers0.controls.answer0.value === this.quiz[0].artist) {
+      alert('Bonne réponse !' + this.answers0.controls.answer0.value);
+    } else {
+      alert('Mauvaise réponse !' + this.answers0.controls.answer0.value);
+    }
+  }
+
+  isCorrect1() {
+    if (this.answers1.controls.answer1.value === this.quiz[1].artist) {
+      alert('Bonne réponse !');
+    } else {
+      alert('Mauvaise réponse !');
+    }
+  }
+
+  isCorrect2() {
+    if (this.answers2.controls.answer2.value === this.quiz[2].artist) {
+      alert('Bonne réponse !');
+    } else {
+      alert('Mauvaise réponse !');
+    }
+  }
+
+  isCorrect3() {
+    if (this.answers3.controls.answer3.value === this.quiz[3].artist) {
+      alert('Bonne réponse !');
+    } else {
+      alert('Mauvaise réponse !');
+    }
   }
 }
