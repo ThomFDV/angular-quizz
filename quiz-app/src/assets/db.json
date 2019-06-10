@@ -1,0 +1,9 @@
+{
+  "musics": [
+    {
+      "id": 1,
+      "title": "Ceci est une music",
+      "artist": "toto le plus fort"
+    }
+  ]
+}
