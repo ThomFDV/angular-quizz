@@ -5,34 +5,34 @@
       "title": "Gangam Style",
       "artist": "PSY",
       "option0": "PSY",
-      "option1": "Matt Pokora",
+      "option1": "Black Eyed Peas",
       "option2": "Garou",
-      "option3": "Fatal Bazooka"
+      "option3": "SYP"
     },
     {
       "id": 2,
       "title": "Despacito",
       "artist": "Luis Fonsi",
       "option0": "Luis Fonsi",
-      "option1": "Matt Pokora",
-      "option2": "Garou",
-      "option3": "Fatal Bazooka"
+      "option1": "Fatal Bazooka",
+      "option2": "Enrique Iglesias",
+      "option3": "Daddy Yankee"
     },
     {
       "id": 3,
       "title": "God's Plan",
       "artist": "Drake",
       "option0": "Drake",
-      "option1": "Matt Pokora",
+      "option1": "Eminem",
       "option2": "Franky Vincent",
-      "option3": "Fatal Bazooka"
+      "option3": "50 cents"
     },
     {
       "id": 4,
       "title": "Umbrella",
       "artist": "Rihanna",
       "option0": "Rihanna",
-      "option1": "Jennifer",
+      "option1": "Nolwenn Leroy",
       "option2": "Beyonce",
       "option3": "Katie Pery"
     }
